@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ravi Kishore Reddy Mallu – Solution Architect, AI Spec-Driven Modernization</title>
+<meta name="description" content="Solution architect with 20+ years across Fortune 500 utility, financial and public-sector systems, leading AI spec-driven modernization with Claude and building applied generative AI.">
+<meta property="og:url" content="https://mrkkishore.github.io/">
+<meta property="og:title" content="Ravi Kishore Reddy Mallu – Solution Architect & Applied AI">
+<meta property="og:description" content="Enterprise modernization meets applied AI. 20+ years across utility, financial and public-sector systems.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,600;112,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #f5f5f0;
+    --surface: #ffffff;
+    --ink: #111111;
+    --body: #333330;
+    --muted: #666660;
+    --line: #d9d9cf;
+    --cobalt: #1d4ed8;
+    --teal: #0f766e;
+    --amber: #a85a06;
+    --plum: #7e22ce;
+    --code: #1e1e2e;
+    --display: "Archivo", "Arial Narrow", Arial, sans-serif;
+    --sans: "IBM Plex Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono: "IBM Plex Mono", Consolas, "Courier New", monospace;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  *, *::before, *::after { box-sizing: inherit; }
+  html { scroll-behavior: smooth; scroll-padding-top: calc(72px + env(safe-area-inset-top, 0px)); }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--body);
+    font: 400 1.0625rem/1.65 var(--sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  img, svg { max-width: 100%; }
+  a { color: var(--cobalt); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--cobalt); outline-offset: 3px; border-radius: 4px; }
+  h1, h2, h3 { font-family: var(--display); color: var(--ink); font-stretch: 112%; line-height: 1.1; margin: 0; }
+  .wrap { width: min(1120px, 100% - 2.5rem); margin-inline: auto; }
+
+  /* Header */
+  body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: rgba(245,245,240,.94); }
+  header.site {
+    position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+    background: rgba(245,245,240,.94); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  header.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 64px; }
+  .mark { font-family: var(--display); font-weight: 800; color: var(--ink); text-decoration: none; font-size: 1.05rem; }
+  nav.primary { display: flex; gap: 1.4rem; flex-wrap: wrap; }
+  nav.primary a { color: var(--body); text-decoration: none; font-weight: 500; font-size: .95rem; }
+  nav.primary a:hover { color: var(--cobalt); }
+  @media (max-width: 720px) { nav.primary { display: none; } }
+
+  /* Hero */
+  .hero { padding: clamp(3rem, 8vw, 6rem) 0 clamp(3rem, 6vw, 5rem); }
+  .hero .wrap { display: grid; grid-template-columns: 1.15fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+  @media (max-width: 900px) { .hero .wrap { grid-template-columns: 1fr; } }
+  .hero h1 { font-size: clamp(2.6rem, 6.2vw, 4.6rem); font-weight: 800; letter-spacing: -.02em; }
+  .hero .role { margin: 1rem 0 0; font-size: clamp(1.15rem, 2vw, 1.35rem); color: var(--ink); font-weight: 500; max-width: 34ch; }
+  .hero .lede { margin: 1.25rem 0 0; max-width: 58ch; }
+  .actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
+  .btn {
+    display: inline-flex; align-items: center; gap: .5rem;
+    padding: .75rem 1.15rem; border-radius: 6px; font-weight: 600; font-size: .98rem;
+    text-decoration: none; border: 2px solid var(--ink);
+  }
+  .btn.solid { background: var(--ink); color: #fff; }
+  .btn.solid:hover { background: var(--cobalt); border-color: var(--cobalt); }
+  .btn.line { color: var(--ink); background: transparent; }
+  .btn.line:hover { border-color: var(--cobalt); color: var(--cobalt); }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .availability { margin-top: 1.5rem; font-size: .95rem; color: var(--muted); }
+
+  /* Hero stack diagram: the one memorable element */
+  .stack { position: relative; }
+  .stack figcaption { font-size: .9rem; color: var(--muted); margin-top: .9rem; }
+  .layer {
+    position: relative; background: var(--surface); border: 1px solid var(--line);
+    border-left: 6px solid var(--c); border-radius: 6px;
+    padding: .9rem 1rem .95rem 1.1rem; margin-left: var(--indent, 0);
+  }
+  .layer + .layer { margin-top: 14px; }
+  .layer + .layer::before {
+    content: ""; position: absolute; left: 22px; top: -15px; width: 2px; height: 14px; background: var(--line);
+  }
+  .layer h3 { font-size: 1.02rem; font-weight: 600; font-family: var(--sans); font-stretch: normal; }
+  .layer p { margin: .35rem 0 0; font-family: var(--mono); font-size: .82rem; color: var(--body); line-height: 1.5; }
+  .layer:nth-child(1) { --c: var(--plum); --indent: 0; }
+  .layer:nth-child(2) { --c: var(--cobalt); --indent: 1.5rem; }
+  .layer:nth-child(3) { --c: var(--teal); --indent: 3rem; }
+  .layer:nth-child(4) { --c: var(--amber); --indent: 4.5rem; }
+  @media (max-width: 520px) { .layer { --indent: 0 !important; } }
+  @media (prefers-reduced-motion: no-preference) {
+    .layer { opacity: 0; transform: translateY(10px); animation: rise .5s ease-out forwards; }
+    .layer:nth-child(4) { animation-delay: .1s; }
+    .layer:nth-child(3) { animation-delay: .3s; }
+    .layer:nth-child(2) { animation-delay: .5s; }
+    .layer:nth-child(1) { animation-delay: .7s; }
+    @keyframes rise { to { opacity: 1; transform: none; } }
+  }
+
+  /* Sections */
+  section.block { padding: clamp(3rem, 7vw, 5rem) 0; border-top: 1px solid var(--line); }
+  .block h2 { font-size: clamp(1.8rem, 3.6vw, 2.5rem); font-weight: 800; letter-spacing: -.01em; }
+  .block .intro { max-width: 62ch; margin: .9rem 0 0; }
+
+  /* Practice areas */
+  .practice { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2.5rem; }
+  @media (max-width: 860px) { .practice { grid-template-columns: 1fr; gap: 1.5rem; } }
+  .practice article { border-top: 3px solid var(--c); padding-top: 1rem; }
+  .practice article:nth-child(1) { --c: var(--amber); }
+  .practice article:nth-child(2) { --c: var(--plum); }
+  .practice article:nth-child(3) { --c: var(--teal); }
+  .practice h3 { font-size: 1.25rem; font-weight: 600; }
+  .practice p { margin: .6rem 0 0; }
+
+  /* Experience timeline (a real sequence) */
+  .timeline { margin-top: 2.5rem; display: grid; gap: 0; }
+  .role-entry { display: grid; grid-template-columns: 180px 1fr; gap: 2rem; padding: 2rem 0; border-bottom: 1px solid var(--line); }
+  .role-entry:first-child { padding-top: 0; }
+  .role-entry:last-child { border-bottom: 0; }
+  @media (max-width: 720px) { .role-entry { grid-template-columns: 1fr; gap: .5rem; } }
+  .when { font-family: var(--mono); font-size: .9rem; color: var(--muted); padding-top: .3rem; }
+  .role-entry h3 { font-size: 1.4rem; font-weight: 600; }
+  .org { margin: .25rem 0 0; color: var(--ink); font-weight: 500; }
+  .role-entry ul { margin: 1rem 0 0; padding-left: 1.1rem; }
+  .role-entry li { margin: .5rem 0; }
+  .role-entry li strong { color: var(--ink); font-weight: 600; }
+  .where { margin: .15rem 0 0; color: var(--muted); font-size: .95rem; }
+
+  /* Projects */
+  .projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; margin-top: 2.5rem; }
+  @media (max-width: 820px) { .projects { grid-template-columns: 1fr; } }
+  .project {
+    background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--c);
+    border-radius: 6px; padding: 1.5rem 1.5rem 1.4rem; display: flex; flex-direction: column;
+  }
+  .project:nth-child(1) { --c: var(--cobalt); }
+  .project:nth-child(2) { --c: var(--amber); }
+  .project:nth-child(3) { --c: var(--teal); }
+  .project:nth-child(4) { --c: var(--plum); }
+  .project:nth-child(5) { --c: var(--cobalt); }
+  .project:nth-child(6) { --c: var(--amber); }
+  .project h3 { font-size: 1.35rem; font-weight: 600; }
+  .project p { margin: .7rem 0 0; }
+  .tags { display: flex; flex-wrap: wrap; gap: .4rem; margin: 1.1rem 0 0; padding: 0; list-style: none; }
+  .tags li { font-family: var(--mono); font-size: .8rem; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 4px; padding: .15rem .5rem; }
+  .project .links { margin-top: auto; padding-top: 1.25rem; display: flex; gap: 1.25rem; flex-wrap: wrap; }
+  .project .links a { font-weight: 600; display: inline-flex; align-items: center; gap: .4rem; }
+  .project .links svg { width: 17px; height: 17px; }
+
+  /* Skills */
+  .skills { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem 3rem; margin-top: 2.5rem; }
+  @media (max-width: 760px) { .skills { grid-template-columns: 1fr; } }
+  .skills h3 { font-size: 1.1rem; font-weight: 600; font-family: var(--sans); font-stretch: normal; }
+  .skills p { margin: .5rem 0 0; }
+
+  /* Code-style credential card */
+  .creds { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 2.5rem; }
+  @media (max-width: 760px) { .creds { grid-template-columns: 1fr; } }
+  .cred { background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--c); border-radius: 6px; padding: 1.25rem 1.4rem; }
+  .cred:nth-child(1) { --c: var(--plum); }
+  .cred:nth-child(2) { --c: var(--cobalt); }
+  .cred:nth-child(3) { --c: var(--teal); }
+  .cred:nth-child(4) { --c: var(--amber); }
+  .creds-title { margin-top: 3rem; font-size: 1.25rem; font-weight: 600; }
+  .creds-title + .creds { margin-top: 1.25rem; }
+  .cred h3 { font-size: 1.1rem; font-weight: 600; font-family: var(--sans); font-stretch: normal; }
+  .cred p { margin: .35rem 0 0; color: var(--muted); }
+
+  /* Contact */
+  .contact { background: var(--code); color: #e6e6f0; border-radius: 8px; padding: clamp(2rem, 5vw, 3rem); margin-top: 2.5rem; }
+  .contact h2 { color: #ffffff; }
+  .contact p { max-width: 60ch; margin: 1rem 0 0; color: #d4d4e0; }
+  .contact .actions .btn.solid { background: #ffffff; color: var(--ink); border-color: #ffffff; }
+  .contact .actions .btn.solid:hover { background: #a6c8ff; border-color: #a6c8ff; }
+  .contact .actions .btn.line { color: #ffffff; border-color: #8a8aa0; }
+  .contact .actions .btn.line:hover { border-color: #a6c8ff; color: #a6c8ff; }
+  .contact a:focus-visible { outline-color: #a6c8ff; }
+
+  footer { padding: 2.5rem 0 3rem; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="mark" href="#top">Ravi Kishore Mallu</a>
+    <nav class="primary" aria-label="Sections">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Ravi Kishore Reddy Mallu</h1>
+        <p class="role">Solution architect leading AI spec-driven modernization of enterprise Java platforms.</p>
+        <p class="lede">20+ years of enterprise architecture across Fortune 500 utility, financial and state-government systems. At American Electric Power I’m moving a legacy Java EE monolith to Spring Boot microservices with Claude and Claude Code, using loop engineering, reusable Claude Skills and multi-agent orchestration, and turning that approach into a modernization standard other teams can follow.</p>
+        <div class="actions">
+          <a class="btn solid" href="#projects">See my projects</a>
+          <a class="btn line" href="https://github.com/mrkkishore" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.7 4.7 0 0 1 1.3-3.3c-.2-.3-.6-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.7.3 2.9.1 3.2a4.7 4.7 0 0 1 1.3 3.3c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+            GitHub
+          </a>
+          <a class="btn line" href="https://www.linkedin.com/in/ravi-kishore-mallu-958139b" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+        <p class="availability">Based in Dallas–Irving, TX. Open to local, remote or low-travel roles that combine solution architecture with applied AI.</p>
+      </div>
+
+      <figure class="stack" aria-label="The layers of systems I work across">
+        <div class="layer">
+          <h3>Applied AI</h3>
+          <p>Claude API, Claude Code, Claude Skills, MCP, RAG, guardrails, doer/checker agent loops</p>
+        </div>
+        <div class="layer">
+          <h3>Modern services</h3>
+          <p>Spring Boot microservices, Azure APIM, OAuth 2.0/OIDC with Entra ID, Docker, OpenShift</p>
+        </div>
+        <div class="layer">
+          <h3>Enterprise core</h3>
+          <p>Java EE: EJB 3.1, JSF/PrimeFaces, JPA, Hibernate, Spring, JAX-RS, JMS on WebLogic</p>
+        </div>
+        <div class="layer">
+          <h3>Data and infrastructure</h3>
+          <p>Oracle 9i–12c, SQL Server, PostgreSQL, F5, IIS, Tomcat, IBM MQ</p>
+        </div>
+        <figcaption>The stack I work across, from the systems of record up to the AI layer.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- WHAT I DO -->
+  <section class="block" id="about">
+    <div class="wrap">
+      <h2>What I bring to a team</h2>
+      <div class="practice">
+        <article>
+          <h3>Modernizing what already works</h3>
+          <p>Two decades on business-critical systems for a Fortune 500 utility and three state governments. I break monoliths into services, define API exposure and identity, and move workloads to containers without disrupting the finance and tax processes that run on them.</p>
+        </article>
+        <article>
+          <h3>Putting AI into the delivery process</h3>
+          <p>Legacy code and business rules become structured migration specs, which drive code and test generation through generate, verify and refine loops, with architect sign-off at every stage. Reusable Claude Skills keep the output consistent with our standards.</p>
+        </article>
+        <article>
+          <h3>Owning the product end to end</h3>
+          <p>Architect, SME and product owner in one seat: product vision for Treasury Finance and Credit stakeholders, backlog and OKRs, and onshore/offshore TCS and IBM teams through UAT, release and production support.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="block" id="experience">
+    <div class="wrap">
+      <h2>Experience</h2>
+      <p class="intro">Utility, state-government tax and motor-vehicle systems, telecom and logistics.</p>
+
+      <div class="timeline">
+        <div class="role-entry">
+          <div class="when">Mar 2017 – Present</div>
+          <div>
+            <h3>Solution Engineer Principal / Solution Architect, SME and Product Owner</h3>
+            <p class="org">American Electric Power (AEP)</p>
+            <p class="where">Columbus, OH and Irving, TX</p>
+            <ul>
+              <li><strong>ARS modernization.</strong> Leading the migration of the Accounts Receivable Securitization platform from a Java EE monolith (EJB 3.1, JSF/PrimeFaces, EclipseLink, WebLogic, Oracle) to Spring Boot microservices behind Azure API Management, secured with OAuth 2.0/OIDC via Microsoft Entra ID and packaged as Docker containers.</li>
+              <li><strong>AI spec-driven delivery.</strong> Introduced Claude and Claude Code as the delivery model: legacy analysis produces migration specs and service designs, which drive code and test generation through doer/checker loops and human review gates.</li>
+              <li><strong>Reusable Claude Skills.</strong> Codified migration conventions (EJB-to-Spring Boot patterns, JPA mapping, Entra ID security, APIM exposure, OpenShift deployment) and orchestrated specialized agents for spec, build, test and review.</li>
+              <li><strong>Enterprise standards.</strong> Partnering with Enterprise Architecture on OpenShift vs. Amazon EKS and with the Integration Center of Excellence on APIM standards, while making the AI-assisted approach a reusable model for other AEP teams.</li>
+              <li><strong>Product ownership.</strong> Own the ARS vision, backlog and OKRs for Treasury Finance and Credit, and manage onshore and offshore TCS and IBM delivery teams across integrations with PeopleSoft, MACSS, AutoSys and IDM.</li>
+              <li><strong>AI transformation.</strong> Built an executive briefing that maps manual finance processes to AI automation opportunities.</li>
+              <li><strong>Platform and modernization.</strong> Run ARS on WebLogic behind F5, deployed CRACS on OpenShift, modernized Credit Risk/ETRM tooling, consolidated legacy Lotus Notes apps, and built CI/CD with Maven and Jenkins.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="role-entry">
+          <div class="when">Jun 2008 – Mar 2017</div>
+          <div>
+            <h3>Service Info Developer III, Solution/Systems Architect</h3>
+            <p class="org">Saber / EDS / HP Enterprise Services / DXC Technology</p>
+            <p class="where">Columbus, OH and Frankfort, KY. One company through successive acquisitions.</p>
+            <ul>
+              <li><strong>Ohio Department of Taxation.</strong> Solution architect on STARS, a multi-tier Oracle PSRM tax system covering 18 tax types, with Hibernate/JPA and Oracle Policy Automation business rules, in a fully Agile delivery model (2011–2017).</li>
+              <li><strong>Kentucky Department of Revenue.</strong> Led architecture, estimation and production support for the Comprehensive Tax System, led a five-person team, and estimated a roughly 50,000-hour Phase 2 modernization (2008–2011).</li>
+              <li><strong>New Jersey Motor Vehicle Commission.</strong> Architected the MATRX vehicle titling and registration system with SOA web services and Hibernate/JPA persistence (2012).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="role-entry">
+          <div class="when">Jun 2005 – Jan 2008</div>
+          <div>
+            <h3>Senior Java Developer / Java Developer</h3>
+            <p class="org">Tata Consultancy Services (TCS)</p>
+            <ul>
+              <li><strong>Tata Teleservices.</strong> Designed a configurable rules engine for package and service validation using Struts, EJB and Hibernate on JBoss, which cut rule duplication and configuration time and won the SUN Innovative Award.</li>
+              <li><strong>P&amp;O Ports.</strong> Built core modules of a global terminal-management system for container, billing and yard planning, with XML/EDI integration on Oracle Application Server.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="block" id="projects">
+    <div class="wrap">
+      <h2>Personal projects</h2>
+      <p class="intro">Applied AI and full-stack work I build on my own time. Source is on <a href="https://github.com/mrkkishore" target="_blank" rel="noopener">GitHub</a>.</p>
+
+      <div class="projects">
+        <article class="project">
+          <h3>Scholarship Finder</h3>
+          <p>A production web app for college applications: scholarship discovery, cover-letter and essay drafting, and admission-odds assessment. API keys stay behind a server-side proxy, with four guardrails, per-IP rate limiting, URL-liveness checks and a fail-closed search fallback. A security audit resolved 11 vulnerabilities.</p>
+          <ul class="tags"><li>Node.js</li><li>Express</li><li>Claude API</li><li>Tavily</li><li>Railway</li></ul>
+          <div class="links">
+            <!-- EDIT: point to the exact repo, and add a "Live demo" link if it's public -->
+            <a href="https://github.com/mrkkishore?tab=repositories" target="_blank" rel="noopener">Source code</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Utility Rules Engine</h3>
+          <p>Turns Excel-based utility tariff spreadsheets into structured, plain-English pricing rules, using Claude to interpret rate schedules that are normally read and coded by hand.</p>
+          <ul class="tags"><li>React</li><li>Claude API</li></ul>
+          <div class="links">
+            <!-- EDIT: exact repo URL -->
+            <a href="https://github.com/mrkkishore?tab=repositories" target="_blank" rel="noopener">Source code</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>LocalDeals</h3>
+          <p>A local deals aggregator that pulls business data from Google Places and Yelp Fusion into one searchable app, with a relational data model in PostgreSQL and a Redis layer.</p>
+          <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>PostgreSQL</li><li>Prisma</li><li>Upstash Redis</li></ul>
+          <div class="links">
+            <!-- EDIT: exact repo URL -->
+            <a href="https://github.com/mrkkishore?tab=repositories" target="_blank" rel="noopener">Source code</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>RAG Starter</h3>
+          <p>A retrieval-augmented generation starter: documents are embedded with Voyage AI, stored in Supabase pgvector behind an HNSW index, and answered by Claude grounded in the retrieved passages.</p>
+          <ul class="tags"><li>Voyage AI</li><li>Supabase</li><li>pgvector</li><li>HNSW</li><li>Claude API</li></ul>
+          <div class="links">
+            <!-- EDIT: exact repo URL -->
+            <a href="https://github.com/mrkkishore?tab=repositories" target="_blank" rel="noopener">Source code</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Daily AI Digest</h3>
+          <p>An agent that assembles a daily AI news digest and emails it each morning, with deduplication so the same story never shows up twice.</p>
+          <ul class="tags"><li>Node.js (ESM)</li><li>Gmail SMTP</li><li>JSON state</li></ul>
+          <div class="links">
+            <!-- EDIT: exact repo URL -->
+            <a href="https://github.com/mrkkishore?tab=repositories" target="_blank" rel="noopener">Source code</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="block" id="skills">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div>
+          <h3>Applied and generative AI</h3>
+          <p>Claude API and Claude Code, LLM application design, prompt and context engineering, RAG, MCP integration, AI guardrails.</p>
+        </div>
+        <div>
+          <h3>AI engineering practices</h3>
+          <p>Spec-driven development, loop engineering, Claude Skills, multi-agent orchestration with doer/checker subagents, human-in-the-loop verification, AI-assisted legacy modernization.</p>
+        </div>
+        <div>
+          <h3>Architecture</h3>
+          <p>Microservices and monolith-to-microservices migration, RESTful and SOAP API design, Azure API Management, SOA, JMS messaging, OAuth 2.0/OIDC, Microsoft Entra ID.</p>
+        </div>
+        <div>
+          <h3>Java and frameworks</h3>
+          <p>Java, Spring (Core, MVC, Boot, AOP), Hibernate, EclipseLink, JPA, EJB, JSF/PrimeFaces, Struts, JAX-RS, JMS, SQL and PL/SQL.</p>
+        </div>
+        <div>
+          <h3>Platforms and delivery</h3>
+          <p>WebLogic, WebSphere, JBoss, Tomcat, IIS, OpenShift, Docker, F5, Amazon EKS, Jenkins, GitHub Actions, Maven, JUnit, Oracle, SQL Server, PostgreSQL.</p>
+        </div>
+        <div>
+          <h3>Product and team leadership</h3>
+          <p>Agile/Scrum product ownership, backlog and OKRs, stakeholder management, onshore/offshore and vendor management.</p>
+        </div>
+      </div>
+
+      <h3 class="creds-title">Education and awards</h3>
+      <div class="creds">
+        <div class="cred">
+          <h3>Master of Computer Applications (MCA)</h3>
+          <p>Graduate degree in computer applications</p>
+        </div>
+        <div class="cred">
+          <h3>SUN Innovative Award</h3>
+          <p>Rules engine platform for Tata Teleservices</p>
+        </div>
+        <div class="cred">
+          <h3>Technology and domain excellence award</h3>
+          <p>ISIS terminal-management system for P&amp;O Ports</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="block" id="contact">
+    <div class="wrap">
+      <div class="contact">
+        <h2>Let’s talk</h2>
+        <p>I’m looking for senior solution architect roles where enterprise modernization meets applied AI, in Dallas–Irving or remote. Email or LinkedIn is the fastest way to reach me.</p>
+        <div class="actions">
+          <a class="btn solid" href="mailto:mrk_kishore@yahoo.com">Email me</a>
+          <a class="btn line" href="https://www.linkedin.com/in/ravi-kishore-mallu-958139b" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn line" href="https://github.com/mrkkishore" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© <span id="yr">2026</span> Ravi Kishore Reddy Mallu</div>
+</footer>
+
+<script>
+  document.getElementById("yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
